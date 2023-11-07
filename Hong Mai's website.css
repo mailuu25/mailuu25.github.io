@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #dceaf9;
+    color: #809bc4;
+}
+
+/*Ảnh bìa lớn*/
+#intro {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ảnh\ đại\ diện.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+}
+
+/*dòng giới thiệu lớn*/
+.text-header h1 {
+    margin: 10px 1%;
+    margin-top: 0%;
+    font-size: 40px;
+    color: #fee3ec;
+}
+
+/*tạo background cho các danh mục*/
+#header {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    color: #809bc4;
+    background-color: #fee3ec;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.text-header h1 span {
+    color: #809bc4;
+}
+
+.contents p span {
+    color: #e15c7c;
+}
+
+.contents ul li span {
+    color: #e15c7c;
+}
+
+.subtitles {
+    font-weight: 1000;
+    display: flex;
+    margin: 10px 10%;
+    position: relative;
+    font-size: 30px;
+    margin-top: 5%;
+    color: #809bc4;
+    padding: 10px 0;
+}
+
+/*tạo gạch dưới đề mục nhỏ*/
+.subtitles::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #809bc4;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.subtitles:hover::after {
+    width: 100%;
+}
+
+/*chỉnh thông tin*/
+.contents {
+    margin: 30px 15%;
+    font-size: 20px;
+}
